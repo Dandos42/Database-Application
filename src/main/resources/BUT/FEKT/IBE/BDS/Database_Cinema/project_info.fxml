@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="575.0" prefWidth="826.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="BUT.FEKT.IBE.BDS.Database_Cinema.controllers.MenuController">
+   <children>
+      <MenuBar>
+        <menus>
+          <Menu mnemonicParsing="false" text="File">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Close" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Help">
+            <items>
+              <MenuItem mnemonicParsing="false" text="About" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+      <Pane prefHeight="530.0" prefWidth="826.0">
+         <children>
+            <Button id="back_to_menu_btn" fx:id="back_to_menu_btn" layoutX="18.0" layoutY="462.0" mnemonicParsing="false" onAction="#BackToMenu" prefHeight="40.0" prefWidth="114.0" style="-fx-background-color: lightblue; -fx-border-color: black;" text="Back to menu">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Button>
+            <TextArea layoutX="18.0" layoutY="24.0" prefHeight="418.0" prefWidth="800.0" text="# BDS IBE 2022 Daniel Prachař&#10;&#10;# bds-project-assignment-3&#10;&#10;# Autors:&#10;Daniel Prachař&#10;&#10;# Date of creation &#10;30.12.2022&#10;&#10;# Subject&#10;Security of database systems&#10;&#10;# University&#10;BRNO UNIVERSITY OF TECHNOLOGY, FACULTY OF ELECTRICAL ENGINEERING AND INFORMATION TECHNOLOGY&#10;&#10;# Licence&#10;MIT License&#10;&#10;Copyright (c) 2022 Daniel Prachař&#10;&#10;Permission is hereby granted, free of charge, to any person obtaining a copy&#10;of this software and associated documentation files (the &quot;Software&quot;), to deal&#10;in the Software without restriction, including without limitation the rights&#10;to use, copy, modify, merge, publish, distribute, sublicense, and/or sell&#10;copies of the Software, and to permit persons to whom the Software is&#10;furnished to do so, subject to the following conditions:&#10;&#10;The above copyright notice and this permission notice shall be included in all&#10;copies or substantial portions of the Software.&#10;&#10;THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR&#10;IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,&#10;FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE&#10;AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER&#10;LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,&#10;OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE&#10;SOFTWARE.&#10;&#10;## To build&amp;run the project&#10;$ mvn clean install&#10;&#10;## Run the project:&#10;$ java -jar target/Database_Cinema-1.0.0.jar&#10;&#10;## Login credentials&#10;username: prachard&#10;password: kokos42&#10;&#10;## Licenses evidence&#10;To view the licenses visit the licenses folder and open `dependencies.html` file&#10;&#10;## Logs&#10;Logs are defined in the logback.xml file in the `src/main/resources` folder&#10;&#10;## Project License&#10;Project license is defined in the LICENSE file in the root of the project directory">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </TextArea>
+            <Button fx:id="exit_btn" layoutX="697.0" layoutY="465.0" mnemonicParsing="false" onAction="#ApplicationExit" prefHeight="34.0" prefWidth="101.0" style="-fx-background-color: red; -fx-border-color: black;" text="EXIT">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Button>
+         </children>
+      </Pane>
+   </children>
+</VBox>

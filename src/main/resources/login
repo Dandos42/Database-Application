@@ -1,0 +1,3 @@
+datasource.url=jdbc:postgresql://localhost:5432/Cinema_village
+datasource.username=my_app
+datasource.password=kokos42

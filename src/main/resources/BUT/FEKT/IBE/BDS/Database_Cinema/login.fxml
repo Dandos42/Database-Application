@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="BUT.FEKT.IBE.BDS.Database_Cinema.controllers.LoginController">
+   <children>
+      <Pane prefHeight="399.0" prefWidth="600.0">
+         <children>
+            <Label layoutX="19.0" layoutY="271.0" text="Login to database">
+               <font>
+                  <Font name="System Italic" size="17.0" />
+               </font>
+            </Label>
+            <Label layoutX="88.0" layoutY="24.0" text="Welcome in Cinema Village">
+               <font>
+                  <Font name="System Bold Italic" size="32.0" />
+               </font>
+            </Label>
+            <GridPane layoutX="70.0" layoutY="297.0" prefHeight="75.0" prefWidth="400.0">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="92.5999755859375" minWidth="10.0" prefWidth="79.79998779296875" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="268.6000122070312" minWidth="10.0" prefWidth="268.6000122070312" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <Label fx:id="usernameLabel" text="Username:">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="passwordLabel" text="Password:" GridPane.rowIndex="1">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+                  <TextField id="usernameTextField" fx:id="usernameText" prefHeight="26.0" prefWidth="253.0" promptText="enter your username" GridPane.columnIndex="1" />
+                  <PasswordField id="passwordTextField" fx:id="passwordText" promptText="enter your password" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+               </children>
+            </GridPane>
+            <ImageView fitHeight="150.0" fitWidth="282.0" layoutX="159.0" layoutY="71.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@pictures/curtain-gb48860b23_640.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="126.0" fitWidth="106.0" layoutX="31.0" layoutY="88.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@pictures/film-reel-g802ccc0e0_640.png" />
+               </image>
+            </ImageView>
+            <Button id="signInButton" fx:id="signInButton" layoutX="457.0" layoutY="304.0" mnemonicParsing="false" onAction="#initialize" prefHeight="47.0" prefWidth="100.0" style="-fx-background-color: lightgreen; -fx-border-color: black;" text="Sign in">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font></Button>
+            <ImageView fitHeight="126.0" fitWidth="106.0" layoutX="466.0" layoutY="88.0" nodeOrientation="RIGHT_TO_LEFT" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@pictures/film-reel-g802ccc0e0_640.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="exit_btn" layoutX="547.0" layoutY="360.0" mnemonicParsing="false" onAction="#ApplicationExit" style="-fx-background-color: red; -fx-border-color: black;" text="EXIT">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Button>
+         </children>
+      </Pane>
+   </children>
+</VBox>

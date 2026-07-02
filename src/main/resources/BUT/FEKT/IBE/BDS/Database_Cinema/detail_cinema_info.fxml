@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="503.0" prefWidth="789.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <MenuBar>
+        <menus>
+          <Menu mnemonicParsing="false" text="File">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Close" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Help">
+            <items>
+              <MenuItem mnemonicParsing="false" text="About" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+      <Pane prefHeight="556.0" prefWidth="790.0">
+         <children>
+            <GridPane layoutX="171.0" layoutY="32.0" prefHeight="397.0" prefWidth="436.0">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="178.79998779296875" minWidth="10.0" prefWidth="64.79996032714843" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="276.0000396728515" minWidth="10.0" prefWidth="276.0000396728515" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <TextField fx:id="id_cinema_detail_text" GridPane.columnIndex="1" />
+                  <TextField fx:id="cinemas_name_detail_text" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                  <TextField fx:id="email_detail_text" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                  <Label text="Id cinema:">
+                     <font>
+                        <Font name="System Italic" size="14.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="park_detail_text" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                  <TextField fx:id="wa_detail_text" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                  <TextField fx:id="city_detail_text" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+                  <TextField fx:id="street_detail_text" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+                  <TextField fx:id="hn_detail_text" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+                  <TextField fx:id="zipc_code_detail_text" GridPane.columnIndex="1" GridPane.rowIndex="8" />
+                  <Label text="Cinemas name:" GridPane.rowIndex="1">
+                     <font>
+                        <Font name="System Italic" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label text="Email:" GridPane.rowIndex="2">
+                     <font>
+                        <Font name="System Italic" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label text="Free parking:" GridPane.rowIndex="3">
+                     <font>
+                        <Font name="System Italic" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label text="Wheelchair access:" GridPane.rowIndex="4">
+                     <font>
+                        <Font name="System Italic" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label text="City:" GridPane.rowIndex="5">
+                     <font>
+                        <Font name="System Italic" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label text="Street:" GridPane.rowIndex="6">
+                     <font>
+                        <Font name="System Italic" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label text="House number:" GridPane.rowIndex="7">
+                     <font>
+                        <Font name="System Italic" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label text="Zip code:" GridPane.rowIndex="8">
+                     <font>
+                        <Font name="System Italic" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label text="Total capacity:" GridPane.rowIndex="9">
+                     <font>
+                        <Font name="System Italic" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label text="Projections" GridPane.rowIndex="10">
+                     <font>
+                        <Font name="System Italic" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label text="Count of movie theater:" GridPane.rowIndex="11">
+                     <font>
+                        <Font name="System Italic" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label text="Opening:" GridPane.rowIndex="12">
+                     <font>
+                        <Font name="System Italic" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label text="Closing:" GridPane.rowIndex="13">
+                     <font>
+                        <Font name="System Italic" size="14.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="total_capacity_detail_text" GridPane.columnIndex="1" GridPane.rowIndex="9" />
+                  <TextField fx:id="projections_detail_text" GridPane.columnIndex="1" GridPane.rowIndex="10" />
+                  <TextField fx:id="comt_detail_text" GridPane.columnIndex="1" GridPane.rowIndex="11" />
+                  <TextField fx:id="open_detail_text" GridPane.columnIndex="1" GridPane.rowIndex="12" />
+                  <TextField fx:id="close_detail_text" GridPane.columnIndex="1" GridPane.rowIndex="13" />
+               </children>
+            </GridPane>
+            <Button fx:id="exit_btn" layoutX="33.0" layoutY="72.0" mnemonicParsing="false" onAction="#ApplicationExit" prefHeight="34.0" prefWidth="101.0" style="-fx-background-color: red; -fx-border-color: black;" text="EXIT">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Button>
+            <Button id="back_to_menu_btn" fx:id="back_to_menu_btn" layoutX="26.0" layoutY="12.0" mnemonicParsing="false" onAction="#BackToMenu" prefHeight="40.0" prefWidth="114.0" style="-fx-background-color: lightblue; -fx-border-color: black;" text="Back to menu">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Button>
+         </children>
+      </Pane>
+   </children>
+</VBox>
