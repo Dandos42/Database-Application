@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="668.0" prefWidth="1269.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="BUT.FEKT.IBE.BDS.Database_Cinema.controllers.CinemaInfoController">
+   <children>
+      <MenuBar prefHeight="19.0" prefWidth="907.0">
+        <menus>
+          <Menu mnemonicParsing="false" text="File">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Close" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Help">
+            <items>
+              <MenuItem mnemonicParsing="false" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+      <SplitPane prefHeight="638.0" prefWidth="1260.0">
+        <items>
+          <AnchorPane fx:id="anchorPane1" minHeight="0.0" minWidth="0.0" prefHeight="638.0" prefWidth="1263.0">
+               <children>
+                  <TableView id="cinema_tab" fx:id="cinema_tab" layoutX="10.0" layoutY="58.0" prefHeight="580.0" prefWidth="810.0">
+                    <columns>
+                      <TableColumn id="id_cinema" fx:id="id_cinema_clm" prefWidth="96.80001258850098" text="id_cinema" />
+                      <TableColumn id="cinemas_name" fx:id="cinemas_name_clm" prefWidth="135.20001220703125" text="cinemas_name" />
+                        <TableColumn id="email" fx:id="email_clm" prefWidth="138.39999389648438" text="email" />
+                        <TableColumn id="free_parking" fx:id="free_park_clm" prefWidth="119.20001220703125" text="free_parking" />
+                        <TableColumn id="wheel_chair" fx:id="wheel_clm" prefWidth="117.5999755859375" text="wheel_chair" />
+                    </columns>
+                  </TableView>
+                  <Label id="cinema_lbl" fx:id="cinema_lbl" layoutX="317.0" layoutY="11.0" text="Cinema Village">
+                     <font>
+                        <Font name="System Bold" size="28.0" />
+                     </font>
+                  </Label>
+                  <TableView id="address_tab" fx:id="address_tab" layoutX="825.0" layoutY="60.0" prefHeight="98.0" prefWidth="422.0">
+                    <columns>
+                      <TableColumn id="id_address" fx:id="id_address_clm" prefWidth="77.60003662109375" text="id_address" />
+                      <TableColumn id="city" fx:id="city_clm" prefWidth="71.20001220703125" text="city" />
+                        <TableColumn id="street" fx:id="street_clm" prefWidth="94.39996337890625" text="street" />
+                        <TableColumn id="house_number" fx:id="house_number_clm" prefWidth="104.0" text="house_number" />
+                        <TableColumn id="zip_code" fx:id="zip_clm" prefWidth="70.39990234375" text="zip_code" />
+                    </columns>
+                  </TableView>
+                  <Label id="address_lbl" fx:id="address_lbl" layoutX="995.0" layoutY="14.0" text="Address">
+                     <font>
+                        <Font size="23.0" />
+                     </font>
+                  </Label>
+                  <TableView id="opening_tab" fx:id="opening_tab" layoutX="828.0" layoutY="348.0" prefHeight="106.0" prefWidth="415.0">
+                    <columns>
+                      <TableColumn id="id_open_clm" fx:id="id_open_clm" prefWidth="160.00006103515625" text="id_open_hours" />
+                      <TableColumn id="open_clm" fx:id="open_clm" prefWidth="137.5999755859375" text="opening" />
+                        <TableColumn id="clos_clm" fx:id="clos_clm" prefWidth="115.20001220703125" text="closing" />
+                    </columns>
+                  </TableView>
+                  <Label id="opening_lbl" fx:id="opening_lbl" layoutX="960.0" layoutY="317.0" text="Opening hours">
+                     <font>
+                        <Font size="23.0" />
+                     </font>
+                  </Label>
+                  <Line endX="-100.00006103515625" endY="459.60003662109375" layoutX="920.0" layoutY="172.0" startX="-100.00009155273438" startY="-169.0" />
+                  <Line endX="-100.00006103515625" endY="459.60003662109375" layoutX="1347.0" layoutY="172.0" startX="-100.00009155273438" startY="-169.0" />
+                  <Button id="back_to_menu_btn" fx:id="back_to_menu_btn" layoutX="14.0" layoutY="11.0" mnemonicParsing="false" onAction="#BackToMenu" prefHeight="40.0" prefWidth="114.0" style="-fx-background-color: lightblue; -fx-border-color: black;" text="Back to menu">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="exit_btn" layoutX="711.0" layoutY="14.0" mnemonicParsing="false" onAction="#ApplicationExit" prefHeight="34.0" prefWidth="101.0" style="-fx-background-color: red; -fx-border-color: black;" text="EXIT">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Button>
+                  <Label id="otherinfo_lbl" fx:id="otherinfo_lbl" layoutX="942.0" layoutY="173.0" text="Other information">
+                     <font>
+                        <Font size="23.0" />
+                     </font>
+                  </Label>
+                  <TableView id="other_info_tab" fx:id="other_info_tab" layoutX="823.0" layoutY="208.0" prefHeight="98.0" prefWidth="422.0">
+                     <columns>
+                        <TableColumn id="total_capacity_clm" fx:id="total_capacity_clm" prefWidth="84.79998779296875" text="total_capacity" />
+                        <TableColumn id="projection_clm" fx:id="projection_clm" prefWidth="86.39990234375" text="projections" />
+                        <TableColumn id="count_of_movie_hall_clm" fx:id="count_of_movie_hall_clm" prefWidth="154.40012207031248" text="count_of_movie_theater" />
+                     </columns>
+                  </TableView>
+                  <Label id="address_lbl" fx:id="address_lbl1" layoutX="993.0" layoutY="473.0" text="All Address">
+                     <font>
+                        <Font size="23.0" />
+                     </font>
+                  </Label>
+                  <TableView id="address_tab_all" fx:id="address_tab_all" layoutX="825.0" layoutY="515.0" prefHeight="114.0" prefWidth="422.0">
+                     <columns>
+                        <TableColumn id="id_address_all" fx:id="id_address_clm_all" prefWidth="77.60003662109375" text="id_address" />
+                        <TableColumn id="city_all" fx:id="city_clm_all" prefWidth="71.20001220703125" text="city" />
+                        <TableColumn id="street_all" fx:id="street_clm_all" prefWidth="94.39996337890625" text="street" />
+                        <TableColumn id="house_number_all" fx:id="house_number_clm_all" prefWidth="104.0" text="house_number" />
+                        <TableColumn id="zip_code_all" fx:id="zip_clm_all" prefWidth="70.39990234375" text="zip_code" />
+                     </columns>
+                  </TableView>
+                  <Button id="back_to_menu_btn" fx:id="detail_info_btn" layoutX="166.0" layoutY="11.0" mnemonicParsing="false" onAction="#DetailCinemaInfo" prefHeight="40.0" prefWidth="114.0" style="-fx-background-color: Orange; -fx-border-color: black;" text="Detail info">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Button>
+               </children>
+            </AnchorPane>
+        </items>
+      </SplitPane>
+   </children>
+</VBox>
