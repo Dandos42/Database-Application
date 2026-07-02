@@ -1,0 +1,14 @@
+DROP TABLE IF EXISTS bds."opens_closes";
+DROP TABLE IF EXISTS bds."works";
+DROP TABLE IF EXISTS bds."has_address";
+DROP TABLE IF EXISTS bds."has_film";
+DROP TABLE IF EXISTS bds."has_position";
+DROP TABLE IF EXISTS bds."opening_hours";
+DROP TABLE IF EXISTS bds."has_genre";
+DROP TABLE IF EXISTS bds."employee_has_address";
+DROP TABLE IF EXISTS bds."address";
+DROP TABLE IF EXISTS bds."cinema";
+DROP TABLE IF EXISTS bds."employees";
+DROP TABLE IF EXISTS bds."films";
+DROP TABLE IF EXISTS bds."genres";
+DROP TABLE IF EXISTS bds."positions";

@@ -1,0 +1,27 @@
+--Zaměstnanci a jejich pozice
+SELECT p."id_employee", "first_name", "last_name", "password", "name" FROM "employees" p JOIN "has_position" pr ON p."id_employee" = pr."id_employee"
+JOIN "positions" r ON pr."id_position" = r."id_position"
+
+--kina a jejich otevírací doba
+SELECT p."id_cinema", "cinemas_name", "opening", "closing" FROM "cinema" p JOIN "opens_closes" pr ON p."id_cinema" = pr."id_cinema"
+JOIN "opening_hours" r ON pr."id_opening_hours" = r."id_opening_hours"
+
+--kina a jejich zaměstnanci
+SELECT p."id_cinema", "cinemas_name", "first_name", "last_name", "password" FROM "cinema" p JOIN "works" pr ON p."id_cinema" = pr."id_cinema"
+JOIN "employees" r ON pr."id_employee" = r."id_employee"
+
+--kina a jejich adresy
+SELECT p."id_cinema", "cinemas_name", "city", "street", "house_number" FROM "cinema" p JOIN "has_address" pr ON p."id_cinema" = pr."id_cinema"
+JOIN "address" r ON pr."id_address" = r."id_address"
+
+--kina a jejich filmy
+SELECT p."id_cinema", "cinemas_name", "films_name", "age_limit", "footage_minutes" FROM "cinema" p JOIN "has_film" pr ON p."id_cinema" = pr."id_cinema"
+JOIN "films" r ON pr."id_film" = r."id_film"
+
+--zaměstnanci a jejich adresy
+SELECT p."id_employee", "first_name", "last_name", "city", "street", "house_number" FROM "employees" p JOIN "employee_has_address" pr ON p."id_employee" = pr."id_employee"
+JOIN "address" r ON pr."id_address" = r."id_address"
+
+--filmy a jejich žánry
+SELECT p."id_film", "films_name", "age_limit", "footage_minutes", "genre" FROM "films" p JOIN "has_genre" pr ON p."id_film" = pr."id_film"
+JOIN "genres" r ON pr."id_genre" = r."id_genre"
